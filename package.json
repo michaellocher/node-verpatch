@@ -1,0 +1,12 @@
+{
+  "name": "node-verpatch",
+  "version": "1.0.0",
+  "description": "A node wrapper for verpatch",
+  "main": "index.js",
+  "bin": {
+    "node-verpatch": "index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
