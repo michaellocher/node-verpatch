@@ -9,7 +9,7 @@ exec(`${verpatch} ${process.argv[2]} /va`, (e) => {
   }
 })
 .on('exit', () => {
-  exec(`${verpatch} ${`${process.argv[2]} ${process.argv[3]} /pv ${process.argv[3]} ${process.argv.splice(4).map(ar => `/s ${ar.split('=')[0]} "${ar.split('=')[1]}"`).join(' ')}`}`, (e) => {
+  exec(`${verpatch} ${`${process.argv[2]}} /pv ${process.argv[3]} ${process.argv.splice(4).map(ar => `/s ${ar.split('=')[0]} "${ar.split('=')[1]}"`).join(' ')}`}`, (e) => {
     if (e) {
       throw new Error(e);
     }
